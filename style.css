@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background: rgb(170, 170, 170);
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "ip list"
+    "ip list"
+    "ip list";
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    background: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "ip ip"
+      "list list";
+  }
+
+  .ip {
+    height: 90vh;
+  }
+}
+
+/* /////////////////////////////////////////// INPUTS */
+
+.ip {
+  grid-area: ip;
+  min-width: 40vw;
+  background: rgb(232, 232, 232);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head-txt {
+  margin: 1rem 0;
+}
+
+.ip-btn {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.url-ip {
+  padding: 0.8rem;
+  width: 90%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #bfbfbf;
+  background-color: #bfbfbf10;
+}
+.url-btn {
+  padding: 0.8rem 3rem;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background: #222;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.url-btn:hover {
+  text-decoration: underline;
+}
+.url-btn:active {
+  transform: scale(0.98);
+}
+
+/* /////////////////////////////////////////// LIST */
+
+.url-list {
+  grid-area: list;
+  background: rgb(206, 206, 206);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.url-head {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.urls {
+  margin: 0 2rem;
+}
