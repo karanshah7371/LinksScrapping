@@ -13,12 +13,12 @@ list.innerHTML = "";
 const insertURL = (url) => {
   if (url) {
     const ipURL = url;
-    const listItem = `<p>${ipURL}</p>`;
+    const listItem = `<p class="url">${ipURL}</p>`;
 
     list.insertAdjacentHTML("afterbegin", listItem);
-    console.log(ipURL);
+
     input.value = "";
-  } else console.log("no-url");
+  }
 
   input.focus(); // makes the input field focused
 };
@@ -32,3 +32,4 @@ btn.addEventListener("click", () => {
 window.addEventListener("keydown", (event) => {
   event.key === "Enter" ? insertURL(input.value) : "";
 });
+
