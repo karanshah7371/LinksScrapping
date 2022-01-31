@@ -32,10 +32,12 @@ body {
 
   .ip {
     height: 90vh;
-    width: 100vw;
+    width: 100%;
   }
   .url-list{
-    width: 100vw;
+    width: 100%;
+    height:auto;
+    overflow: none;
   }
 }
 
