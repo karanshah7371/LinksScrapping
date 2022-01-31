@@ -6,7 +6,7 @@ const btn = document.querySelector(".url-btn");
 const list = document.querySelector(".urls");
 
 // Demo URLS
-const urlArr = ["url-1", "url-2", "url-3"];
+const urlArr = ["https://money.usnews.com/investing/funds/articles/top-hedge-funds-this-year", "https://www.im.natixis.com/us-offshore/research/institutional-investor-survey-2021-outlook", "https://home.kpmg/xx/en/home/insights/2021/04/ten-things-institutional-investors-need-to-know-about-investing-in-infrastructure.html"];
 
 list.innerHTML = "";
 
