@@ -20,26 +20,6 @@ body {
     "ip list";
 }
 
-@media only screen and (max-width: 750px) {
-  .container {
-    background: rgb(255, 255, 255);
-    min-height: 100vh;
-    display: grid;
-    grid-template-areas:
-      "ip ip"
-      "list list";
-  }
-
-  .ip {
-    height: 90vh;
-    width: 100%;
-  }
-  .url-list{
-    width: 100%;
-    height:auto;
-    overflow: none;
-  }
-}
 
 /* /////////////////////////////////////////// INPUTS */
 
@@ -127,3 +107,25 @@ body {
 .url:nth-child(odd) {
   background-color: #e8e8e8;
 }
+
+@media only screen and (max-width: 750px) {
+  .container {
+    background: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "ip ip"
+      "list list";
+  }
+
+  .ip {
+    height: 90vh;
+    width: 100%;
+  }
+  .url-list{
+    width: 100%;
+    height:auto;
+    overflow: none;
+  }
+}
+
